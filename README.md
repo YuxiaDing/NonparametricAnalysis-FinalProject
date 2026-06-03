@@ -1,14 +1,14 @@
-# From Bandwidth to Smoothing Penalty
+# Controlling Smoothness in Nonparametric Regression
 
 ## Brief description
 
-This project contains the first complete project package for the course report:
+This project contains the final project package for the course report:
 
-**From Bandwidth to Smoothing Penalty: Theory, Comparison and Experiments for Nonparametric Smoothing Methods**
+**Controlling Smoothness in Nonparametric Regression: Theory, Simulations, and Real Data Analysis**
 
 The paper studies nonparametric smoothing through the common principle that smoothing parameters control the bias-variance trade-off. It covers KDE, Nadaraya-Watson regression, local polynomial regression, B-spline regression, smoothing splines, simulations, and an exploratory Bike Sharing Dataset analysis.
 
-GitHub repository: TODO
+GitHub repository: https://github.com/YuxiaDing/NonparametricAnalysis-FinalProject
 
 ## Folder structure
 
@@ -27,7 +27,7 @@ FinalProject/
 
 ## How to compile the LaTeX paper
 
-The paper uses the course template style from `FinalProjectRequirement/非参大作业/temp_Eng.tex`.
+The paper uses the course template style.
 
 Recommended Overleaf workflow:
 
@@ -49,10 +49,10 @@ pdflatex main.tex
 For the versioned PDF used during revision, compile with:
 
 ```text
-pdflatex -jobname=main_v4 main.tex
-bibtex main_v4
-pdflatex -jobname=main_v4 main.tex
-pdflatex -jobname=main_v4 main.tex
+pdflatex -jobname=main_v6 main.tex
+bibtex main_v6
+pdflatex -jobname=main_v6 main.tex
+pdflatex -jobname=main_v6 main.tex
 ```
 
 ## How to install dependencies
@@ -103,12 +103,6 @@ If automatic download fails, manually download the Bike Sharing Dataset from:
 
 ```text
 https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
-```
-
-Then extract the archive and place the daily data file at:
-
-```text
-FinalProject/data/Bike-Sharing-Dataset/day.csv
 ```
 
 The paper and code use `day.csv`. The hourly file `hour.csv` is not required for the reported analysis. Raw data files are not tracked by this project. If the code cannot download the data automatically, the user must download and place `day.csv` manually as described above.
@@ -173,11 +167,3 @@ code/config.py
 ```
 
 The default seed is `20260602`. Simulation scripts use fixed seeds and deterministic grids. Minor numerical differences may occur across SciPy or scikit-learn versions, especially for smoothing spline fits.
-
-## TODO items
-
-- Fill in the author name and student ID in `main.tex`.
-- Add the final GitHub repository link.
-- Recheck every citation and BibTeX entry before submission.
-- Re-run the simulations after any code change.
-- Review all plots and captions for consistency with the final paper text.
