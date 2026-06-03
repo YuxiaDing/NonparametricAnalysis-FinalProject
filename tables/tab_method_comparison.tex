@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\caption{Compact simulation comparison across regression functions.}
+\label{tab:method-comparison}
+\small
+\begin{tabular}{lccc}
+\toprule
+Function & Method & RMSE & Boundary RMSE \\
+\midrule
+Boundary change & B-spline & 0.0514 & 0.0669 \\
+Boundary change & Local linear & 0.0542 & 0.0767 \\
+Boundary change & Nadaraya-Watson & 0.0659 & 0.109 \\
+Boundary change & Smoothing spline & 0.0944 & 0.138 \\
+Local spike & B-spline & 0.0483 & 0.0587 \\
+Local spike & Local linear & 0.0795 & 0.0486 \\
+Local spike & Nadaraya-Watson & 0.0919 & 0.0876 \\
+Local spike & Smoothing spline & 0.384 & 0.153 \\
+Smooth periodic & B-spline & 0.0385 & 0.0524 \\
+Smooth periodic & Local linear & 0.0444 & 0.0507 \\
+Smooth periodic & Nadaraya-Watson & 0.0576 & 0.0923 \\
+Smooth periodic & Smoothing spline & 0.0731 & 0.098 \\
+\bottomrule
+\end{tabular}
+\end{table}

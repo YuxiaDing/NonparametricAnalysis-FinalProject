@@ -5,8 +5,6 @@ venv/
 data/Bike-Sharing-Dataset/
 data/bike+sharing+dataset.zip
 figures/*.png
-tables/*.csv
-tables/*.tex
 *.aux
 *.bbl
 *.blg

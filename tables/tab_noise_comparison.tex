@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\caption{Average RMSE under different noise structures.}
+\label{tab:noise-comparison}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Noise & Nadaraya-Watson & Local linear & B-spline & Smoothing spline \\
+\midrule
+Contaminated & 0.0737 & 0.0629 & 0.0575 & 0.0796 \\
+Heavy-tailed & 0.0588 & 0.0418 & 0.0366 & 0.0729 \\
+Heteroscedastic & 0.0758 & 0.0663 & 0.0642 & 0.0841 \\
+Normal & 0.0609 & 0.0444 & 0.0378 & 0.0731 \\
+\bottomrule
+\end{tabular}
+\end{table}

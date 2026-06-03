@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Supplementary simulation comparison under different noise structures.}
+\label{tab:noise-comparison-full}
+\small
+\begin{tabular}{lccc}
+\toprule
+Noise & Method & RMSE & Median absolute error \\
+\midrule
+Contaminated & B-spline & 0.05751 & 0.03645 \\
+Contaminated & Local linear & 0.06294 & 0.04278 \\
+Contaminated & Nadaraya-Watson & 0.07366 & 0.04382 \\
+Contaminated & Smoothing spline & 0.07961 & 0.05629 \\
+Heavy-tailed & B-spline & 0.03665 & 0.02455 \\
+Heavy-tailed & Local linear & 0.04182 & 0.02865 \\
+Heavy-tailed & Nadaraya-Watson & 0.05882 & 0.03251 \\
+Heavy-tailed & Smoothing spline & 0.07294 & 0.05773 \\
+Heteroscedastic & B-spline & 0.06425 & 0.03466 \\
+Heteroscedastic & Local linear & 0.06632 & 0.04089 \\
+Heteroscedastic & Nadaraya-Watson & 0.07578 & 0.04349 \\
+Heteroscedastic & Smoothing spline & 0.08407 & 0.05748 \\
+Normal & B-spline & 0.03783 & 0.02532 \\
+Normal & Local linear & 0.04438 & 0.03098 \\
+Normal & Nadaraya-Watson & 0.06087 & 0.03419 \\
+Normal & Smoothing spline & 0.07309 & 0.05762 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{Supplementary simulation comparison across regression functions.}
+\label{tab:method-comparison-full}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Function & Method & ISE & RMSE & Boundary RMSE & Time \\
+\midrule
+Boundary change & Local quadratic & 0.002353 & 0.04764 & 0.05848 & 0.003914 \\
+Boundary change & B-spline & 0.002737 & 0.05144 & 0.06688 & 0.0008194 \\
+Boundary change & Local linear & 0.003029 & 0.05417 & 0.07674 & 0.003651 \\
+Boundary change & Nadaraya-Watson & 0.004412 & 0.06585 & 0.1091 & 0.0002153 \\
+Boundary change & Smoothing spline & 0.009749 & 0.09444 & 0.1377 & 0.0001509 \\
+Boundary change & Polynomial & 0.03128 & 0.1768 & 0.2924 & 0.0006707 \\
+Boundary change & Linear & 0.07556 & 0.2749 & 0.3512 & 0.0003858 \\
+Local spike & B-spline & 0.002462 & 0.04835 & 0.05871 & 0.0008308 \\
+Local spike & Local quadratic & 0.002961 & 0.05345 & 0.05798 & 0.003943 \\
+Local spike & Local linear & 0.006433 & 0.07954 & 0.04861 & 0.003673 \\
+Local spike & Nadaraya-Watson & 0.008674 & 0.09191 & 0.08762 & 0.00022 \\
+Local spike & Smoothing spline & 0.1475 & 0.3836 & 0.1532 & 0.0001036 \\
+Local spike & Polynomial & 0.2454 & 0.4954 & 0.3105 & 0.0006694 \\
+Local spike & Linear & 0.579 & 0.7609 & 0.7208 & 0.0003861 \\
+Smooth periodic & Local quadratic & 0.001462 & 0.03708 & 0.04808 & 0.003957 \\
+Smooth periodic & B-spline & 0.001608 & 0.03846 & 0.05244 & 0.000817 \\
+Smooth periodic & Local linear & 0.002053 & 0.04438 & 0.05066 & 0.003692 \\
+Smooth periodic & Nadaraya-Watson & 0.003406 & 0.05757 & 0.09232 & 0.0002203 \\
+Smooth periodic & Smoothing spline & 0.005361 & 0.07312 & 0.09798 & 7.016e-05 \\
+Smooth periodic & Polynomial & 0.005361 & 0.07312 & 0.09798 & 0.0006723 \\
+Smooth periodic & Linear & 0.2024 & 0.4499 & 0.6233 & 0.0003829 \\
+\bottomrule
+\end{tabular}
+\end{table}

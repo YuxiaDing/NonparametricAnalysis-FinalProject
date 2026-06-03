@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Cross-validated errors for the Bike Sharing analysis.}
+\label{tab:bike-cv}
+\small
+\begin{tabular}{lccc}
+\toprule
+Method & CV RMSE & CV MAE & Selected parameter \\
+\midrule
+Local linear & 1426.953 & 1188.686 & bandwidth=0.07 \\
+B-spline & 1428.079 & 1186.589 & n\_knots=9 \\
+Smoothing spline & 1428.594 & 1192.794 & smoothing\_factor=1 \\
+Polynomial & 1428.594 & 1192.794 & degree=3 \\
+Nadaraya-Watson & 1430.005 & 1194.859 & bandwidth=0.05 \\
+Linear & 1512.434 & 1250.784 & None \\
+\bottomrule
+\end{tabular}
+\end{table}
